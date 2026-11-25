@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Pranav Raj | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+            padding: 50px 10%;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        /* Profile Image */
+        .profile-image img {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #38bdf8;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #38bdf8;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #1e3a8a;
+        }
+
+        /* About Section */
+        .about p {
+            max-width: 800px;
+            margin: 15px auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Personal Information */
+        .info-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
+
+        .project-card p {
+            line-height: 1.5;
+        }
+
+        /* Contact */
+        .contact p {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media(max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px 10px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .profile-image img {
+                width: 200px;
+                height: 200px;
+            }
+
+        }
+    </style>
+    ```
+
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+
+        <h2>Pranav Raj</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#personal">Personal Info</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>Hello, I'm <span>Pranav Raj</span></h1>
+
+            <p>
+                Student | Future Software Developer | AI & Technology Enthusiast
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </div>
+
+
+        <!-- Profile Photo -->
+        <div class="profile-image">
+
+            <img src="/Pranav.jpg" alt="Pranav Raj Profile Photo">
+
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Pranav Raj. I am passionate about technology,
+            programming, Artificial Intelligence, Machine Learning and Software
+            Development.
+        </p>
+
+        <p>
+            I am currently learning programming languages and developing my
+            technical skills to become a successful Software Engineer.
+        </p>
+
+    </section>
+
+
+    <!-- Personal Information -->
+    <section id="personal">
+
+        <h2>Personal Information</h2>
+
+        <div class="info-container">
+
+            <div class="info-card">
+                <h3>Name</h3>
+                <p>Pranav Raj</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Date of Birth</h3>
+                <p>20/07/2008</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Birth Place</h3>
+                <p>Faridabad, Haryana</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C++</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Artificial Intelligence</div>
+            <div class="skill">Machine Learning</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Student Management System -->
+            <div class="project-card">
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A Student Management System designed to manage and organize
+                    student information efficiently.
+                </p>
+
+                <br>
+
+                <a href="https://github.com/Pranavraj14259/Student-management-system" target="_blank" class="btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- Personal Expense Tracker -->
+            <div class="project-card">
+
+                <h3>Personal Expense Tracker</h3>
+
+                <p>
+                    A Personal Expense Tracker that helps users manage and
+                    track their daily expenses.
+                </p>
+
+                <br>
+
+                <a href="https://github.com/Pranavraj14259/Personal-Expense-Tracker" target="_blank" class="btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- Portfolio Website -->
+            <div class="project-card">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    My personal portfolio website created using HTML and CSS
+                    to showcase my skills, projects, and personal information.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p><strong>Name:</strong> Pranav Raj</p>
+
+        <p><strong>Email:</strong> pranav14259@gmail.com</p>
+
+        <p><strong>Contact Number:</strong> 8209573124</p>
+
+        <p><strong>Location:</strong> India</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Pranav Raj | All Rights Reserved</p>
+
+    </footer>
+
+
+</body>
+
+</html>
